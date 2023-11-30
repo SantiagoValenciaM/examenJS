@@ -8,12 +8,12 @@ let dataArray = [];
 // Función para agregar un elemento al array y actualizar la lista
 function agregarEvento() {
   let inputText = document.getElementById("inputText");
-  let Item = document.createElement("li");
+  let item = document.createElement("li");
 
   if (inputText.value.trim() !== "") {
     dataArray.push(inputText.value);
-    Item.appendChild(document.createTextNode(inputText.value));
-    document.getElementById("ulArray").appendChild(Item);
+    item.appendChild(document.createTextNode(inputText.value));
+    document.getElementById("ulArray").appendChild(item);
     inputText.value = ""; // Limpiar el campo de entrada después de agregar
   }
 }
